@@ -6,4 +6,4 @@ http.createServer((req, res) => {
   res.end('Hello World\n');
 }).listen(config.platform1.port, config.platform1.host);
 
-console.log('Server1 running', process.env.PORT);
+console.log('Server1 running');
