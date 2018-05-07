@@ -1,3 +1,9 @@
+import http from 'http';
 var config = require('../config');
 
-console.log(config.db1.user);
+http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(config.platform1.port, config.platform1.host);
+
+console.log('Server1 running', process.env.PORT);
