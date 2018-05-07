@@ -13,7 +13,9 @@ inside .env file add your secret details
 eg -  
 
 DB_HOST=localhost
+
 DB_USER=root
+
 DB_PASS=s1mpl3
 
 Then save it and 
