@@ -1,7 +1,8 @@
 # node_prod_server
 App with different env configs
 
-#Steps
+# Steps
+
 git clone https://github.com/akilawickey/node_prod_server.git
 
 cd node_prod_server
