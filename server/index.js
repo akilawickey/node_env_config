@@ -7,3 +7,5 @@ http.createServer((req, res) => {
 }).listen(config.platform1.port, config.platform1.host);
 
 console.log('Server1 running');
+
+console.log(config.platform1.password);

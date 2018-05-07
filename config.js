@@ -1,5 +1,6 @@
 //Application Configuration
 'use strict'
+require('dotenv').config();
 
 var config = module.exports;
 
@@ -7,8 +8,8 @@ var config = module.exports;
 
 config.platform1 = {
 	user: 'root',
-	password: 'root',
 	name: 'database1',
+	password : process.env.DB_PASS,
 	host: '127.0.0.1',
 	port: '3000'
 };
@@ -17,7 +18,6 @@ config.platform1 = {
 
 config.platform2 = {
 	user: 'akila',
-	password: 'danny',
 	name: 'dbpwd',
 	host: '127.0.0.1',
 	port: '8080'
