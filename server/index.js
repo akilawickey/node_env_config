@@ -1,11 +1,19 @@
-import http from 'http';
-var config = require('../config');
+require('dotenv').config(); // Getting .env content
 
-http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
-}).listen(config.platform1.port, config.platform1.host);
+var config = require('../config'); //getting the general config data to the app
+var express = require('express')
+var app = express()
 
-console.log('Server1 running');
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
 
-console.log(config.platform1.password);
+app.listen(process.env.APP_PORT)
+
+console.log('Server running is running on ' + process.env.APP_HOST + " " + process.env.APP_PORT);
+
+//getting from config.js public data
+console.log('\n User 1 Data = ' + config.platform1.userdata1);
+//getting from .env which is not published to the github
+console.log('\n DB_PASS = ' + process.env.DB_PASS);
+

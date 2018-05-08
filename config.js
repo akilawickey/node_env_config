@@ -1,26 +1,24 @@
-//Application Configuration
+/*
+These config.js can keep your general public configurations of the App
+*/
 'use strict'
-require('dotenv').config();
 
 var config = module.exports;
 
 //your test platform1 configs
-
 config.platform1 = {
 	user: 'root',
-	name: 'database1',
-	password : process.env.DB_PASS,
-	host: '127.0.0.1',
-	port: '3000'
+	userdata1: 'data1',
+	userdata2: 'data2',
+	userdata3: 'data3'
 };
 
 //your test platform2 configs
-
 config.platform2 = {
 	user: 'akila',
-	name: 'dbpwd',
-	host: '127.0.0.1',
-	port: '8080'
+	userdata1: 'data1',
+	userdata2: 'data2',
+	userdata3: 'data3'
 };
 
 
