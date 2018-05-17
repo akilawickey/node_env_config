@@ -1,12 +1,12 @@
-### node_prod_server
-App with different env configs
+### What is this?
+This is sample app which able to run with env specific configs (e.g. local, dev, stage, prod). And also made the process automated (CI/CD) using jenkins.
 
 ### Follow these Steps
 
-git clone https://github.com/akilawickey/node_prod_server.git
+git clone https://github.com/akilawickey/node_env_config.git
 
 ```
-cd node_prod_server
+cd node_env_config
 npm install
 
 ```
@@ -67,7 +67,14 @@ var envFromRealEnvironment = process.env.NODE_ENV || 'stage' // Specife the envi
 In order to start the app run:
 
 ```
-node app/server.js
+node server/index.js
 
 ```
+### Adding app for production
+In order to put the app for production first install pm2:
 
+```
+npm install pm2 -g
+pm2 start server/index.js
+
+```
