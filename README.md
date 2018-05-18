@@ -1,9 +1,9 @@
 ### What is this?
 This is sample app which able to run with env specific configs (e.g. local, dev, stage, prod). And also made the process automated (CI/CD) using jenkins.
 
-### Follow these Steps
+## Follow these Steps
 
-# 1. Using Dockerfile
+### 1. Using Dockerfile
 
 ```
 git clone https://github.com/akilawickey/node_env_config
@@ -11,7 +11,7 @@ docker build -t <your username>/node_env_config .
 docker run user/node_env_config
 ```
   
-# 2. Run Normally
+### 2. Run Normally
 
 git clone https://github.com/akilawickey/node_env_config.git
 
