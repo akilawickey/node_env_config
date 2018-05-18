@@ -3,22 +3,6 @@ This is sample app which able to run with env specific configs (e.g. local, dev,
 
 ## Follow these Steps
 
-### 1. Using Dockerfile
-
-```
-git clone https://github.com/akilawickey/node_env_config
-docker build -t <your username>/node_env_config .
-docker run user/node_env_config
-```
-  
-### 2. Run Normally
-
-git clone https://github.com/akilawickey/node_env_config.git
-
-```
-cd node_env_config
-npm install
-```
 To add develepment configurations create .env.dev file inside this folder and add following
 
 ```
@@ -66,6 +50,24 @@ Edit following line to make application run in production configuration
 ```
 var envFromRealEnvironment = process.env.NODE_ENV || 'stage' // Specife the environment here dev or stage
 
+```
+
+
+### 1. Using Dockerfile
+
+```
+git clone https://github.com/akilawickey/node_env_config
+docker build -t <your username>/node_env_config .
+docker run user/node_env_config
+```
+  
+### 2. Run Normally
+
+git clone https://github.com/akilawickey/node_env_config.git
+
+```
+cd node_env_config
+npm install
 ```
 
 ### Starting the Server
